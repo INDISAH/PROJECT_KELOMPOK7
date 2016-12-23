@@ -73,6 +73,8 @@ Partial Class DataBarang
         Me.Label1 = New System.Windows.Forms.Label()
         Me.BatalButton = New System.Windows.Forms.Button()
         Me.RefreshButton = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.CariButton = New System.Windows.Forms.Button()
         No_FakLabel = New System.Windows.Forms.Label()
         Nama_barangLabel = New System.Windows.Forms.Label()
         SatuanLabel = New System.Windows.Forms.Label()
@@ -490,12 +492,30 @@ Partial Class DataBarang
         Me.RefreshButton.Text = "Refresh"
         Me.RefreshButton.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(379, 36)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(420, 20)
+        Me.TextBox1.TabIndex = 13
+        '
+        'CariButton
+        '
+        Me.CariButton.Location = New System.Drawing.Point(831, 36)
+        Me.CariButton.Name = "CariButton"
+        Me.CariButton.Size = New System.Drawing.Size(75, 23)
+        Me.CariButton.TabIndex = 14
+        Me.CariButton.Text = "Cari"
+        Me.CariButton.UseVisualStyleBackColor = True
+        '
         'DataBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.PROJECT_VB.My.Resources.Resources.blue_abstract_composition
         Me.ClientSize = New System.Drawing.Size(1036, 464)
+        Me.Controls.Add(Me.CariButton)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.RefreshButton)
         Me.Controls.Add(Me.BatalButton)
         Me.Controls.Add(Me.Label1)
@@ -566,5 +586,7 @@ Partial Class DataBarang
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents BatalButton As System.Windows.Forms.Button
     Friend WithEvents RefreshButton As System.Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents CariButton As System.Windows.Forms.Button
 
 End Class

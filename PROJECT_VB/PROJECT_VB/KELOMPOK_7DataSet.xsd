@@ -67,7 +67,17 @@
               <Mapping SourceColumn="Satuan" DataSetColumn="Satuan" />
               <Mapping SourceColumn="Harga" DataSetColumn="Harga" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="KELOMPOK_7ConnectionString (MySettings)" DbObjectName="Tbl_Barang" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="cariQuery" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="cariQuery" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="cariQuery">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [*Kode_Barang], Nama_barang, Satuan, Harga FROM Tbl_Barang
+where [*Kode_Barang] like cari or Nama_barang like cari</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Tbl_D_PjlTableAdapter" GeneratorDataComponentClassName="Tbl_D_PjlTableAdapter" Name="Tbl_D_Pjl" UserDataComponentName="Tbl_D_PjlTableAdapter">
             <MainSource>
@@ -149,7 +159,7 @@
   <xs:element name="KELOMPOK_7DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="KELOMPOK_7DataSet" msprop:Generator_UserDSName="KELOMPOK_7DataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Tbl_Barang" msprop:Generator_TableClassName="Tbl_BarangDataTable" msprop:Generator_TableVarName="tableTbl_Barang" msprop:Generator_RowChangedName="Tbl_BarangRowChanged" msprop:Generator_TablePropName="Tbl_Barang" msprop:Generator_RowDeletingName="Tbl_BarangRowDeleting" msprop:Generator_RowChangingName="Tbl_BarangRowChanging" msprop:Generator_RowEvHandlerName="Tbl_BarangRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_BarangRowDeleted" msprop:Generator_RowClassName="Tbl_BarangRow" msprop:Generator_UserTableName="Tbl_Barang" msprop:Generator_RowEvArgName="Tbl_BarangRowChangeEvent">
+        <xs:element name="Tbl_Barang" msprop:Generator_TableClassName="Tbl_BarangDataTable" msprop:Generator_TableVarName="tableTbl_Barang" msprop:Generator_TablePropName="Tbl_Barang" msprop:Generator_RowDeletingName="Tbl_BarangRowDeleting" msprop:Generator_RowChangingName="Tbl_BarangRowChanging" msprop:Generator_RowEvHandlerName="Tbl_BarangRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_BarangRowDeleted" msprop:Generator_UserTableName="Tbl_Barang" msprop:Generator_RowChangedName="Tbl_BarangRowChanged" msprop:Generator_RowEvArgName="Tbl_BarangRowChangeEvent" msprop:Generator_RowClassName="Tbl_BarangRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="_x002A_Kode_Barang" msprop:Generator_ColumnVarNameInTable="_column_Kode_Barang" msprop:Generator_ColumnPropNameInRow="__Kode_Barang" msprop:Generator_ColumnPropNameInTable="__Kode_BarangColumn" msprop:Generator_UserColumnName="*Kode_Barang">
@@ -183,7 +193,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Tbl_D_Pjl" msprop:Generator_TableClassName="Tbl_D_PjlDataTable" msprop:Generator_TableVarName="tableTbl_D_Pjl" msprop:Generator_RowChangedName="Tbl_D_PjlRowChanged" msprop:Generator_TablePropName="Tbl_D_Pjl" msprop:Generator_RowDeletingName="Tbl_D_PjlRowDeleting" msprop:Generator_RowChangingName="Tbl_D_PjlRowChanging" msprop:Generator_RowEvHandlerName="Tbl_D_PjlRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_D_PjlRowDeleted" msprop:Generator_RowClassName="Tbl_D_PjlRow" msprop:Generator_UserTableName="Tbl_D_Pjl" msprop:Generator_RowEvArgName="Tbl_D_PjlRowChangeEvent">
+        <xs:element name="Tbl_D_Pjl" msprop:Generator_TableClassName="Tbl_D_PjlDataTable" msprop:Generator_TableVarName="tableTbl_D_Pjl" msprop:Generator_TablePropName="Tbl_D_Pjl" msprop:Generator_RowDeletingName="Tbl_D_PjlRowDeleting" msprop:Generator_RowChangingName="Tbl_D_PjlRowChanging" msprop:Generator_RowEvHandlerName="Tbl_D_PjlRowChangeEventHandler" msprop:Generator_RowDeletedName="Tbl_D_PjlRowDeleted" msprop:Generator_UserTableName="Tbl_D_Pjl" msprop:Generator_RowChangedName="Tbl_D_PjlRowChanged" msprop:Generator_RowEvArgName="Tbl_D_PjlRowChangeEvent" msprop:Generator_RowClassName="Tbl_D_PjlRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="No_Fak" msprop:Generator_ColumnVarNameInTable="columnNo_Fak" msprop:Generator_ColumnPropNameInRow="No_Fak" msprop:Generator_ColumnPropNameInTable="No_FakColumn" msprop:Generator_UserColumnName="No_Fak" minOccurs="0">
@@ -212,7 +222,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Query3" msprop:Generator_TableClassName="Query3DataTable" msprop:Generator_TableVarName="tableQuery3" msprop:Generator_RowChangedName="Query3RowChanged" msprop:Generator_TablePropName="Query3" msprop:Generator_RowDeletingName="Query3RowDeleting" msprop:Generator_RowChangingName="Query3RowChanging" msprop:Generator_RowEvHandlerName="Query3RowChangeEventHandler" msprop:Generator_RowDeletedName="Query3RowDeleted" msprop:Generator_RowClassName="Query3Row" msprop:Generator_UserTableName="Query3" msprop:Generator_RowEvArgName="Query3RowChangeEvent">
+        <xs:element name="Query3" msprop:Generator_TableClassName="Query3DataTable" msprop:Generator_TableVarName="tableQuery3" msprop:Generator_TablePropName="Query3" msprop:Generator_RowDeletingName="Query3RowDeleting" msprop:Generator_RowChangingName="Query3RowChanging" msprop:Generator_RowEvHandlerName="Query3RowChangeEventHandler" msprop:Generator_RowDeletedName="Query3RowDeleted" msprop:Generator_UserTableName="Query3" msprop:Generator_RowChangedName="Query3RowChanged" msprop:Generator_RowEvArgName="Query3RowChangeEvent" msprop:Generator_RowClassName="Query3Row">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Tbl_Barang__x002A_Kode_Barang" msprop:Generator_ColumnVarNameInTable="_columnTbl_Barang__Kode_Barang" msprop:Generator_ColumnPropNameInRow="_Tbl_Barang__Kode_Barang" msprop:Generator_ColumnPropNameInTable="_Tbl_Barang__Kode_BarangColumn" msprop:Generator_UserColumnName="Tbl_Barang_*Kode_Barang">
@@ -246,7 +256,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Query4" msprop:Generator_TableClassName="Query4DataTable" msprop:Generator_TableVarName="tableQuery4" msprop:Generator_RowChangedName="Query4RowChanged" msprop:Generator_TablePropName="Query4" msprop:Generator_RowDeletingName="Query4RowDeleting" msprop:Generator_RowChangingName="Query4RowChanging" msprop:Generator_RowEvHandlerName="Query4RowChangeEventHandler" msprop:Generator_RowDeletedName="Query4RowDeleted" msprop:Generator_RowClassName="Query4Row" msprop:Generator_UserTableName="Query4" msprop:Generator_RowEvArgName="Query4RowChangeEvent">
+        <xs:element name="Query4" msprop:Generator_TableClassName="Query4DataTable" msprop:Generator_TableVarName="tableQuery4" msprop:Generator_TablePropName="Query4" msprop:Generator_RowDeletingName="Query4RowDeleting" msprop:Generator_RowChangingName="Query4RowChanging" msprop:Generator_RowEvHandlerName="Query4RowChangeEventHandler" msprop:Generator_RowDeletedName="Query4RowDeleted" msprop:Generator_UserTableName="Query4" msprop:Generator_RowChangedName="Query4RowChanged" msprop:Generator_RowEvArgName="Query4RowChangeEvent" msprop:Generator_RowClassName="Query4Row">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="No_Fak" msprop:Generator_ColumnVarNameInTable="columnNo_Fak" msprop:Generator_ColumnPropNameInRow="No_Fak" msprop:Generator_ColumnPropNameInTable="No_FakColumn" msprop:Generator_UserColumnName="No_Fak" minOccurs="0">
