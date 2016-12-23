@@ -71,6 +71,8 @@ Partial Class DataBarang
         Me.SimpanButton = New System.Windows.Forms.Button()
         Me.KeluarButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.BatalButton = New System.Windows.Forms.Button()
+        Me.RefreshButton = New System.Windows.Forms.Button()
         No_FakLabel = New System.Windows.Forms.Label()
         Nama_barangLabel = New System.Windows.Forms.Label()
         SatuanLabel = New System.Windows.Forms.Label()
@@ -181,7 +183,7 @@ Partial Class DataBarang
         Me.Query4DataGridView.DataSource = Me.Query4BindingSource
         Me.Query4DataGridView.Location = New System.Drawing.Point(379, 75)
         Me.Query4DataGridView.Name = "Query4DataGridView"
-        Me.Query4DataGridView.Size = New System.Drawing.Size(617, 167)
+        Me.Query4DataGridView.Size = New System.Drawing.Size(634, 167)
         Me.Query4DataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -426,7 +428,7 @@ Partial Class DataBarang
         '
         'EditButton
         '
-        Me.EditButton.Location = New System.Drawing.Point(132, 430)
+        Me.EditButton.Location = New System.Drawing.Point(154, 430)
         Me.EditButton.Name = "EditButton"
         Me.EditButton.Size = New System.Drawing.Size(75, 23)
         Me.EditButton.TabIndex = 6
@@ -435,7 +437,7 @@ Partial Class DataBarang
         '
         'Hapus
         '
-        Me.Hapus.Location = New System.Drawing.Point(257, 430)
+        Me.Hapus.Location = New System.Drawing.Point(307, 430)
         Me.Hapus.Name = "Hapus"
         Me.Hapus.Size = New System.Drawing.Size(75, 23)
         Me.Hapus.TabIndex = 7
@@ -444,7 +446,7 @@ Partial Class DataBarang
         '
         'SimpanButton
         '
-        Me.SimpanButton.Location = New System.Drawing.Point(388, 430)
+        Me.SimpanButton.Location = New System.Drawing.Point(458, 430)
         Me.SimpanButton.Name = "SimpanButton"
         Me.SimpanButton.Size = New System.Drawing.Size(75, 23)
         Me.SimpanButton.TabIndex = 8
@@ -453,7 +455,7 @@ Partial Class DataBarang
         '
         'KeluarButton
         '
-        Me.KeluarButton.Location = New System.Drawing.Point(516, 430)
+        Me.KeluarButton.Location = New System.Drawing.Point(901, 430)
         Me.KeluarButton.Name = "KeluarButton"
         Me.KeluarButton.Size = New System.Drawing.Size(75, 23)
         Me.KeluarButton.TabIndex = 9
@@ -470,12 +472,32 @@ Partial Class DataBarang
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "Data Barang"
         '
+        'BatalButton
+        '
+        Me.BatalButton.Location = New System.Drawing.Point(610, 430)
+        Me.BatalButton.Name = "BatalButton"
+        Me.BatalButton.Size = New System.Drawing.Size(75, 23)
+        Me.BatalButton.TabIndex = 11
+        Me.BatalButton.Text = "Batal"
+        Me.BatalButton.UseVisualStyleBackColor = True
+        '
+        'RefreshButton
+        '
+        Me.RefreshButton.Location = New System.Drawing.Point(755, 430)
+        Me.RefreshButton.Name = "RefreshButton"
+        Me.RefreshButton.Size = New System.Drawing.Size(75, 23)
+        Me.RefreshButton.TabIndex = 12
+        Me.RefreshButton.Text = "Refresh"
+        Me.RefreshButton.UseVisualStyleBackColor = True
+        '
         'DataBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.PROJECT_VB.My.Resources.Resources.blue_abstract_composition
-        Me.ClientSize = New System.Drawing.Size(1006, 464)
+        Me.ClientSize = New System.Drawing.Size(1036, 464)
+        Me.Controls.Add(Me.RefreshButton)
+        Me.Controls.Add(Me.BatalButton)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.KeluarButton)
         Me.Controls.Add(Me.SimpanButton)
@@ -542,5 +564,7 @@ Partial Class DataBarang
     Friend WithEvents SimpanButton As System.Windows.Forms.Button
     Friend WithEvents KeluarButton As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents BatalButton As System.Windows.Forms.Button
+    Friend WithEvents RefreshButton As System.Windows.Forms.Button
 
 End Class

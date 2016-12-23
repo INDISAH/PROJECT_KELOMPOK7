@@ -14,10 +14,20 @@
 
     Private Sub TambahButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TambahButton.Click
         Query4BindingSource.AddNew()
+        Query3BindingSource.AddNew()
     End Sub
 
-    Private Sub SimpanButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SimpanButton.Click
-        Me.Validate()
-        Me.Query4BindingSource.EndEdit()
+    Private Sub BatalButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BatalButton.Click
+        Query4BindingSource.CancelEdit()
+        Query3BindingSource.CancelEdit()
+    End Sub
+
+    Private Sub RefreshButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RefreshButton.Click
+        Me.Query4TableAdapter.Fill(Me.KELOMPOK_7DataSet.Query4)
+        Me.Query3TableAdapter.Fill(Me.KELOMPOK_7DataSet.Query3)
+    End Sub
+
+    Private Sub KeluarButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KeluarButton.Click
+        Me.Close()
     End Sub
 End Class
