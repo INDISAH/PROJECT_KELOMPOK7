@@ -33,38 +33,18 @@ Partial Class DataBarang
         Dim SatuanLabel1 As System.Windows.Forms.Label
         Dim HargaLabel1 As System.Windows.Forms.Label
         Me.Query4DataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Query4BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.KELOMPOK_7DataSet = New PROJECT_VB.KELOMPOK_7DataSet()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.No_FakTextBox = New System.Windows.Forms.TextBox()
-        Me.Tbl_D_PjlBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Nama_barangTextBox = New System.Windows.Forms.TextBox()
         Me.SatuanTextBox = New System.Windows.Forms.TextBox()
         Me.HargaTextBox = New System.Windows.Forms.TextBox()
         Me.JumlahTextBox = New System.Windows.Forms.TextBox()
         Me.Query3DataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Query3BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me._Kode_BarangTextBox = New System.Windows.Forms.TextBox()
-        Me.Tbl_BarangBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Nama_barangTextBox1 = New System.Windows.Forms.TextBox()
         Me.SatuanTextBox1 = New System.Windows.Forms.TextBox()
         Me.HargaTextBox1 = New System.Windows.Forms.TextBox()
-        Me.Query4TableAdapter = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Query4TableAdapter()
-        Me.TableAdapterManager = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.TableAdapterManager()
-        Me.Tbl_D_PjlTableAdapter = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Tbl_D_PjlTableAdapter()
-        Me.Query3TableAdapter = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Query3TableAdapter()
-        Me.Tbl_BarangTableAdapter = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Tbl_BarangTableAdapter()
         Me.TambahButton = New System.Windows.Forms.Button()
         Me.EditButton = New System.Windows.Forms.Button()
         Me.Hapus = New System.Windows.Forms.Button()
@@ -75,6 +55,26 @@ Partial Class DataBarang
         Me.RefreshButton = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.CariButton = New System.Windows.Forms.Button()
+        Me.Tbl_BarangBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.KELOMPOK_7DataSet = New PROJECT_VB.KELOMPOK_7DataSet()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Query3BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Tbl_D_PjlBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Query4BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Query4TableAdapter = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Query4TableAdapter()
+        Me.TableAdapterManager = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.TableAdapterManager()
+        Me.Tbl_D_PjlTableAdapter = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Tbl_D_PjlTableAdapter()
+        Me.Query3TableAdapter = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Query3TableAdapter()
+        Me.Tbl_BarangTableAdapter = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Tbl_BarangTableAdapter()
         No_FakLabel = New System.Windows.Forms.Label()
         Nama_barangLabel = New System.Windows.Forms.Label()
         SatuanLabel = New System.Windows.Forms.Label()
@@ -85,14 +85,14 @@ Partial Class DataBarang
         SatuanLabel1 = New System.Windows.Forms.Label()
         HargaLabel1 = New System.Windows.Forms.Label()
         CType(Me.Query4DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Query4BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.KELOMPOK_7DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.Tbl_D_PjlBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Query3DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Query3BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.Tbl_BarangBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KELOMPOK_7DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Query3BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tbl_D_PjlBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Query4BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'No_FakLabel
@@ -188,53 +188,6 @@ Partial Class DataBarang
         Me.Query4DataGridView.Size = New System.Drawing.Size(634, 167)
         Me.Query4DataGridView.TabIndex = 1
         '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "No_Fak"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "No_Fak"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Nama_barang"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Nama_barang"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Satuan"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Satuan"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Jumlah"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Jumlah"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Harga"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Harga"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Total Harga"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Total Harga"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        '
-        'Query4BindingSource
-        '
-        Me.Query4BindingSource.DataMember = "Query4"
-        Me.Query4BindingSource.DataSource = Me.KELOMPOK_7DataSet
-        '
-        'KELOMPOK_7DataSet
-        '
-        Me.KELOMPOK_7DataSet.DataSetName = "KELOMPOK_7DataSet"
-        Me.KELOMPOK_7DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -262,11 +215,6 @@ Partial Class DataBarang
         Me.No_FakTextBox.Name = "No_FakTextBox"
         Me.No_FakTextBox.Size = New System.Drawing.Size(116, 20)
         Me.No_FakTextBox.TabIndex = 1
-        '
-        'Tbl_D_PjlBindingSource
-        '
-        Me.Tbl_D_PjlBindingSource.DataMember = "Tbl_D_Pjl"
-        Me.Tbl_D_PjlBindingSource.DataSource = Me.KELOMPOK_7DataSet
         '
         'Nama_barangTextBox
         '
@@ -312,35 +260,6 @@ Partial Class DataBarang
         Me.Query3DataGridView.Size = New System.Drawing.Size(441, 142)
         Me.Query3DataGridView.TabIndex = 3
         '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Tbl_Barang_*Kode_Barang"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Tbl_Barang_*Kode_Barang"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Tbl_Barang_Nama_barang"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Tbl_Barang_Nama_barang"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Tbl_Barang_Satuan"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "Tbl_Barang_Satuan"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.DataPropertyName = "Tbl_Barang_Harga"
-        Me.DataGridViewTextBoxColumn10.HeaderText = "Tbl_Barang_Harga"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        '
-        'Query3BindingSource
-        '
-        Me.Query3BindingSource.DataMember = "Query3"
-        Me.Query3BindingSource.DataSource = Me.KELOMPOK_7DataSet
-        '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -367,11 +286,6 @@ Partial Class DataBarang
         Me._Kode_BarangTextBox.Size = New System.Drawing.Size(114, 20)
         Me._Kode_BarangTextBox.TabIndex = 1
         '
-        'Tbl_BarangBindingSource
-        '
-        Me.Tbl_BarangBindingSource.DataMember = "Tbl_Barang"
-        Me.Tbl_BarangBindingSource.DataSource = Me.KELOMPOK_7DataSet
-        '
         'Nama_barangTextBox1
         '
         Me.Nama_barangTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_BarangBindingSource, "Nama_barang", True))
@@ -395,29 +309,6 @@ Partial Class DataBarang
         Me.HargaTextBox1.Name = "HargaTextBox1"
         Me.HargaTextBox1.Size = New System.Drawing.Size(114, 20)
         Me.HargaTextBox1.TabIndex = 7
-        '
-        'Query4TableAdapter
-        '
-        Me.Query4TableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.Tbl_BarangTableAdapter = Nothing
-        Me.TableAdapterManager.Tbl_D_PjlTableAdapter = Me.Tbl_D_PjlTableAdapter
-        Me.TableAdapterManager.UpdateOrder = PROJECT_VB.KELOMPOK_7DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'Tbl_D_PjlTableAdapter
-        '
-        Me.Tbl_D_PjlTableAdapter.ClearBeforeFill = True
-        '
-        'Query3TableAdapter
-        '
-        Me.Query3TableAdapter.ClearBeforeFill = True
-        '
-        'Tbl_BarangTableAdapter
-        '
-        Me.Tbl_BarangTableAdapter.ClearBeforeFill = True
         '
         'TambahButton
         '
@@ -508,6 +399,115 @@ Partial Class DataBarang
         Me.CariButton.Text = "Cari"
         Me.CariButton.UseVisualStyleBackColor = True
         '
+        'Tbl_BarangBindingSource
+        '
+        Me.Tbl_BarangBindingSource.DataMember = "Tbl_Barang"
+        Me.Tbl_BarangBindingSource.DataSource = Me.KELOMPOK_7DataSet
+        '
+        'KELOMPOK_7DataSet
+        '
+        Me.KELOMPOK_7DataSet.DataSetName = "KELOMPOK_7DataSet"
+        Me.KELOMPOK_7DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Tbl_Barang_*Kode_Barang"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Tbl_Barang_*Kode_Barang"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Tbl_Barang_Nama_barang"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Tbl_Barang_Nama_barang"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Tbl_Barang_Satuan"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Tbl_Barang_Satuan"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "Tbl_Barang_Harga"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "Tbl_Barang_Harga"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        '
+        'Query3BindingSource
+        '
+        Me.Query3BindingSource.DataMember = "Query3"
+        Me.Query3BindingSource.DataSource = Me.KELOMPOK_7DataSet
+        '
+        'Tbl_D_PjlBindingSource
+        '
+        Me.Tbl_D_PjlBindingSource.DataMember = "Tbl_D_Pjl"
+        Me.Tbl_D_PjlBindingSource.DataSource = Me.KELOMPOK_7DataSet
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "No_Fak"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "No_Fak"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Nama_barang"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Nama_barang"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Satuan"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Satuan"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Jumlah"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Jumlah"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Harga"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Harga"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Total Harga"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Total Harga"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        '
+        'Query4BindingSource
+        '
+        Me.Query4BindingSource.DataMember = "Query4"
+        Me.Query4BindingSource.DataSource = Me.KELOMPOK_7DataSet
+        '
+        'Query4TableAdapter
+        '
+        Me.Query4TableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.Tbl_BarangTableAdapter = Nothing
+        Me.TableAdapterManager.Tbl_D_PjlTableAdapter = Me.Tbl_D_PjlTableAdapter
+        Me.TableAdapterManager.UpdateOrder = PROJECT_VB.KELOMPOK_7DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'Tbl_D_PjlTableAdapter
+        '
+        Me.Tbl_D_PjlTableAdapter.ClearBeforeFill = True
+        '
+        'Query3TableAdapter
+        '
+        Me.Query3TableAdapter.ClearBeforeFill = True
+        '
+        'Tbl_BarangTableAdapter
+        '
+        Me.Tbl_BarangTableAdapter.ClearBeforeFill = True
+        '
         'DataBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -531,16 +531,16 @@ Partial Class DataBarang
         Me.Name = "DataBarang"
         Me.Text = "BARANG"
         CType(Me.Query4DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Query4BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.KELOMPOK_7DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.Tbl_D_PjlBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Query3DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Query3BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.Tbl_BarangBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KELOMPOK_7DataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Query3BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tbl_D_PjlBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Query4BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
