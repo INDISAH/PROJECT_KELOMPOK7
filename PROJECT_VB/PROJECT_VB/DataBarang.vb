@@ -30,4 +30,8 @@
     Private Sub KeluarButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KeluarButton.Click
         Me.Close()
     End Sub
+
+    Private Sub Query4DataGridView_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles Query4DataGridView.CellContentClick
+
+    End Sub
 End Class
