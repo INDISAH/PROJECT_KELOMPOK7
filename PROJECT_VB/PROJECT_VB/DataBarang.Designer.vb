@@ -48,11 +48,6 @@ Partial Class DataBarang
         Me.SatuanTextBox = New System.Windows.Forms.TextBox()
         Me.HargaTextBox = New System.Windows.Forms.TextBox()
         Me.JumlahTextBox = New System.Windows.Forms.TextBox()
-        Me.Query3DataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Query3BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me._Kode_BarangTextBox = New System.Windows.Forms.TextBox()
@@ -75,6 +70,18 @@ Partial Class DataBarang
         Me.Tbl_D_PjlTableAdapter = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Tbl_D_PjlTableAdapter()
         Me.Query3TableAdapter = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Query3TableAdapter()
         Me.Tbl_BarangTableAdapter = New PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Tbl_BarangTableAdapter()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Query3DataGridView = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         No_FakLabel = New System.Windows.Forms.Label()
         Nama_barangLabel = New System.Windows.Forms.Label()
         SatuanLabel = New System.Windows.Forms.Label()
@@ -89,10 +96,10 @@ Partial Class DataBarang
         CType(Me.KELOMPOK_7DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.Tbl_D_PjlBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Query3DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Query3BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.Tbl_BarangBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Query3DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'No_FakLabel
@@ -258,6 +265,7 @@ Partial Class DataBarang
         'No_FakTextBox
         '
         Me.No_FakTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_D_PjlBindingSource, "No_Fak", True))
+        Me.No_FakTextBox.Enabled = False
         Me.No_FakTextBox.Location = New System.Drawing.Point(100, 33)
         Me.No_FakTextBox.Name = "No_FakTextBox"
         Me.No_FakTextBox.Size = New System.Drawing.Size(116, 20)
@@ -271,6 +279,7 @@ Partial Class DataBarang
         'Nama_barangTextBox
         '
         Me.Nama_barangTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_D_PjlBindingSource, "Nama_barang", True))
+        Me.Nama_barangTextBox.Enabled = False
         Me.Nama_barangTextBox.Location = New System.Drawing.Point(100, 59)
         Me.Nama_barangTextBox.Name = "Nama_barangTextBox"
         Me.Nama_barangTextBox.Size = New System.Drawing.Size(235, 20)
@@ -279,6 +288,7 @@ Partial Class DataBarang
         'SatuanTextBox
         '
         Me.SatuanTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_D_PjlBindingSource, "Satuan", True))
+        Me.SatuanTextBox.Enabled = False
         Me.SatuanTextBox.Location = New System.Drawing.Point(100, 85)
         Me.SatuanTextBox.Name = "SatuanTextBox"
         Me.SatuanTextBox.Size = New System.Drawing.Size(116, 20)
@@ -287,6 +297,7 @@ Partial Class DataBarang
         'HargaTextBox
         '
         Me.HargaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_D_PjlBindingSource, "Harga", True))
+        Me.HargaTextBox.Enabled = False
         Me.HargaTextBox.Location = New System.Drawing.Point(100, 111)
         Me.HargaTextBox.Name = "HargaTextBox"
         Me.HargaTextBox.Size = New System.Drawing.Size(116, 20)
@@ -295,46 +306,11 @@ Partial Class DataBarang
         'JumlahTextBox
         '
         Me.JumlahTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_D_PjlBindingSource, "Jumlah", True))
+        Me.JumlahTextBox.Enabled = False
         Me.JumlahTextBox.Location = New System.Drawing.Point(100, 137)
         Me.JumlahTextBox.Name = "JumlahTextBox"
         Me.JumlahTextBox.Size = New System.Drawing.Size(116, 20)
         Me.JumlahTextBox.TabIndex = 9
-        '
-        'Query3DataGridView
-        '
-        Me.Query3DataGridView.AutoGenerateColumns = False
-        Me.Query3DataGridView.BackgroundColor = System.Drawing.Color.DodgerBlue
-        Me.Query3DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Query3DataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10})
-        Me.Query3DataGridView.DataSource = Me.Query3BindingSource
-        Me.Query3DataGridView.Location = New System.Drawing.Point(379, 258)
-        Me.Query3DataGridView.Name = "Query3DataGridView"
-        Me.Query3DataGridView.Size = New System.Drawing.Size(441, 142)
-        Me.Query3DataGridView.TabIndex = 3
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Tbl_Barang_*Kode_Barang"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Tbl_Barang_*Kode_Barang"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Tbl_Barang_Nama_barang"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Tbl_Barang_Nama_barang"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Tbl_Barang_Satuan"
-        Me.DataGridViewTextBoxColumn9.HeaderText = "Tbl_Barang_Satuan"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.DataPropertyName = "Tbl_Barang_Harga"
-        Me.DataGridViewTextBoxColumn10.HeaderText = "Tbl_Barang_Harga"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         '
         'Query3BindingSource
         '
@@ -352,7 +328,7 @@ Partial Class DataBarang
         Me.GroupBox2.Controls.Add(Me.SatuanTextBox1)
         Me.GroupBox2.Controls.Add(HargaLabel1)
         Me.GroupBox2.Controls.Add(Me.HargaTextBox1)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 250)
+        Me.GroupBox2.Location = New System.Drawing.Point(20, 315)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(361, 150)
         Me.GroupBox2.TabIndex = 4
@@ -362,6 +338,7 @@ Partial Class DataBarang
         '_Kode_BarangTextBox
         '
         Me._Kode_BarangTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_BarangBindingSource, "*Kode_Barang", True))
+        Me._Kode_BarangTextBox.Enabled = False
         Me._Kode_BarangTextBox.Location = New System.Drawing.Point(102, 37)
         Me._Kode_BarangTextBox.Name = "_Kode_BarangTextBox"
         Me._Kode_BarangTextBox.Size = New System.Drawing.Size(114, 20)
@@ -375,6 +352,7 @@ Partial Class DataBarang
         'Nama_barangTextBox1
         '
         Me.Nama_barangTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_BarangBindingSource, "Nama_barang", True))
+        Me.Nama_barangTextBox1.Enabled = False
         Me.Nama_barangTextBox1.Location = New System.Drawing.Point(102, 63)
         Me.Nama_barangTextBox1.Name = "Nama_barangTextBox1"
         Me.Nama_barangTextBox1.Size = New System.Drawing.Size(233, 20)
@@ -383,6 +361,7 @@ Partial Class DataBarang
         'SatuanTextBox1
         '
         Me.SatuanTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_BarangBindingSource, "Satuan", True))
+        Me.SatuanTextBox1.Enabled = False
         Me.SatuanTextBox1.Location = New System.Drawing.Point(102, 89)
         Me.SatuanTextBox1.Name = "SatuanTextBox1"
         Me.SatuanTextBox1.Size = New System.Drawing.Size(114, 20)
@@ -391,6 +370,7 @@ Partial Class DataBarang
         'HargaTextBox1
         '
         Me.HargaTextBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Tbl_BarangBindingSource, "Harga", True))
+        Me.HargaTextBox1.Enabled = False
         Me.HargaTextBox1.Location = New System.Drawing.Point(102, 115)
         Me.HargaTextBox1.Name = "HargaTextBox1"
         Me.HargaTextBox1.Size = New System.Drawing.Size(114, 20)
@@ -398,7 +378,7 @@ Partial Class DataBarang
         '
         'TambahButton
         '
-        Me.TambahButton.Location = New System.Drawing.Point(12, 430)
+        Me.TambahButton.Location = New System.Drawing.Point(-437, 668)
         Me.TambahButton.Name = "TambahButton"
         Me.TambahButton.Size = New System.Drawing.Size(75, 23)
         Me.TambahButton.TabIndex = 5
@@ -407,7 +387,7 @@ Partial Class DataBarang
         '
         'EditButton
         '
-        Me.EditButton.Location = New System.Drawing.Point(154, 430)
+        Me.EditButton.Location = New System.Drawing.Point(161, 490)
         Me.EditButton.Name = "EditButton"
         Me.EditButton.Size = New System.Drawing.Size(75, 23)
         Me.EditButton.TabIndex = 6
@@ -416,7 +396,7 @@ Partial Class DataBarang
         '
         'Hapus
         '
-        Me.Hapus.Location = New System.Drawing.Point(307, 430)
+        Me.Hapus.Location = New System.Drawing.Point(306, 490)
         Me.Hapus.Name = "Hapus"
         Me.Hapus.Size = New System.Drawing.Size(75, 23)
         Me.Hapus.TabIndex = 7
@@ -425,7 +405,7 @@ Partial Class DataBarang
         '
         'SimpanButton
         '
-        Me.SimpanButton.Location = New System.Drawing.Point(458, 430)
+        Me.SimpanButton.Location = New System.Drawing.Point(457, 490)
         Me.SimpanButton.Name = "SimpanButton"
         Me.SimpanButton.Size = New System.Drawing.Size(75, 23)
         Me.SimpanButton.TabIndex = 8
@@ -453,7 +433,7 @@ Partial Class DataBarang
         '
         'BatalButton
         '
-        Me.BatalButton.Location = New System.Drawing.Point(610, 430)
+        Me.BatalButton.Location = New System.Drawing.Point(609, 490)
         Me.BatalButton.Name = "BatalButton"
         Me.BatalButton.Size = New System.Drawing.Size(75, 23)
         Me.BatalButton.TabIndex = 11
@@ -462,7 +442,7 @@ Partial Class DataBarang
         '
         'RefreshButton
         '
-        Me.RefreshButton.Location = New System.Drawing.Point(755, 430)
+        Me.RefreshButton.Location = New System.Drawing.Point(754, 490)
         Me.RefreshButton.Name = "RefreshButton"
         Me.RefreshButton.Size = New System.Drawing.Size(75, 23)
         Me.RefreshButton.TabIndex = 12
@@ -508,12 +488,118 @@ Partial Class DataBarang
         '
         Me.Tbl_BarangTableAdapter.ClearBeforeFill = True
         '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "Tbl_Barang_Harga"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "Tbl_Barang_Harga"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Tbl_Barang_Satuan"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Tbl_Barang_Satuan"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Tbl_Barang_Nama_barang"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Tbl_Barang_Nama_barang"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Tbl_Barang_*Kode_Barang"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Tbl_Barang_*Kode_Barang"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'Query3DataGridView
+        '
+        Me.Query3DataGridView.AutoGenerateColumns = False
+        Me.Query3DataGridView.BackgroundColor = System.Drawing.Color.DodgerBlue
+        Me.Query3DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Query3DataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10})
+        Me.Query3DataGridView.DataSource = Me.Query3BindingSource
+        Me.Query3DataGridView.Location = New System.Drawing.Point(421, 323)
+        Me.Query3DataGridView.Name = "Query3DataGridView"
+        Me.Query3DataGridView.Size = New System.Drawing.Size(441, 142)
+        Me.Query3DataGridView.TabIndex = 3
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(43, 259)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "Tambah"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(41, 490)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 16
+        Me.Button2.Text = "Tambah"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(161, 259)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 17
+        Me.Button3.Text = "Edit"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(457, 259)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 18
+        Me.Button4.Text = "Simpan"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(306, 259)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 19
+        Me.Button5.Text = "Hapus"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(609, 259)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 20
+        Me.Button6.Text = "Batal"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(754, 259)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.TabIndex = 21
+        Me.Button7.Text = "Refresh"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'DataBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.PROJECT_VB.My.Resources.Resources.blue_abstract_composition
-        Me.ClientSize = New System.Drawing.Size(1036, 464)
+        Me.ClientSize = New System.Drawing.Size(1036, 510)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.CariButton)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.RefreshButton)
@@ -536,11 +622,11 @@ Partial Class DataBarang
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.Tbl_D_PjlBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Query3DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Query3BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.Tbl_BarangBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Query3DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -566,11 +652,6 @@ Partial Class DataBarang
     Friend WithEvents JumlahTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Query3BindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Query3TableAdapter As PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Query3TableAdapter
-    Friend WithEvents Query3DataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Tbl_BarangBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents Tbl_BarangTableAdapter As PROJECT_VB.KELOMPOK_7DataSetTableAdapters.Tbl_BarangTableAdapter
@@ -588,5 +669,17 @@ Partial Class DataBarang
     Friend WithEvents RefreshButton As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents CariButton As System.Windows.Forms.Button
+    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Query3DataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
 
 End Class
