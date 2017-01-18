@@ -414,7 +414,7 @@ Partial Class DataBarang
         '
         'KeluarButton
         '
-        Me.KeluarButton.Location = New System.Drawing.Point(901, 430)
+        Me.KeluarButton.Location = New System.Drawing.Point(901, 382)
         Me.KeluarButton.Name = "KeluarButton"
         Me.KeluarButton.Size = New System.Drawing.Size(75, 23)
         Me.KeluarButton.TabIndex = 9
@@ -592,7 +592,7 @@ Partial Class DataBarang
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.PROJECT_VB.My.Resources.Resources.blue_abstract_composition
-        Me.ClientSize = New System.Drawing.Size(1036, 510)
+        Me.ClientSize = New System.Drawing.Size(1039, 510)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
